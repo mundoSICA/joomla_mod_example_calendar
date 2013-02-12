@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>mod_example_calendar</name>
+	<!-- Descripción del Autor-->
+	<author>fitorec</author>
+	<creationDate>February 2010</creationDate>
+	<copyright>Copyright (C) 2005 - 2012 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>programacion@mundosica.com</authorEmail>
+	<authorUrl>www.mundosica.com</authorUrl>
+	<!-- Versión y Descripcion del modulo-->
+	<version>1.0.0</version>
+	<description>Este modulo es solo un Ejemplo del uso del calendario de Joomla!</description>
+	<!-- Aquí es un buen espacio para poner los archivos de traducción
+	en caso de existir -->
+
+	<!-- Declaración de los archivos que conforman el modulo-->
+	<files>
+		<filename module="mod_example_calendar">mod_example_calendar.php</filename>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+		<filename>mod_example_calendar.xml</filename>
+	</files>
+</extension>

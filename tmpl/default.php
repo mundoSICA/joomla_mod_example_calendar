@@ -10,16 +10,17 @@
 
 defined('_JEXEC') or die;
 
-JHtml::_('behavior.keepalive');
+//Agregamos el comportamiento tooltip(esto para que se vean chida la informacion del input)
 JHtml::_('bootstrap.tooltip');
 
 // Agregamos el calendario
 JHTML::_('behavior.calendar');
+//En el domready mandamos a viculamos el evento del click del calendario
 $doc =& JFactory::getDocument();
 $doc->addScriptDeclaration('window.addEvent(\'domready\', function() {Calendar.setup({
-	inputField     :    "modrsv-calendar",        // ID del input en donde vamos a instanciar el calendario
+	inputField     :    "mod-ex-cal",        // ID del input en donde vamos a instanciar el calendario
 	ifFormat       :    "%Y-%m-%d",               // Formato de la Fecha
-	button         :    "modrsv-calendar-ctrl",   // ID del control el cual dispara el calendario
+	button         :    "mod-ex-cal-ctrl",   // ID del control el cual dispara el calendario
 	align          :    "Tr",                     // Alineación (Top right - Esquina superior Derecha)
 	singleClick    :    true
 	});});'
@@ -36,8 +37,8 @@ $doc->addScriptDeclaration('window.addEvent(\'domready\', function() {Calendar.s
 					<i class="icon-calendar tip" title="Fecha"></i>
 					<label for="modrsv-phone" class="element-invisible">Fecha</label>
 				</span>
-				<input id="modrsv-calendar" type="text" name="phone" class="input-small" tabindex="1" size="18" placeholder="Fecha" />
-				<a href="#" id='modrsv-calendar-ctrl' class="btn hasTooltip" title="Inserte la fecha"><i class="icon-question-sign"></i></a>
+				<input id="mod-ex-cal" type="text" name="fecha" class="input-small" tabindex="1" size="18" placeholder="Fecha" />
+				<a href="#" id='mod-ex-cal-ctrl' class="btn hasTooltip" title="Inserte la fecha"><i class="icon-question-sign"></i></a>
 			</div>
 		</div>
 	</div>

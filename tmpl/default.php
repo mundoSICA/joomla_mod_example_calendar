@@ -45,7 +45,7 @@ $doc->addScriptDeclaration('window.addEvent(\'domready\', function() {Calendar.s
 	
 		<div id="form-recervaciones-submit" class="control-group">
 			<div class="controls">
-				<button type="submit" tabindex="3" name="Submit" class="btn btn-primary btn">Reservar Ahora</button>
+				<button type="submit" tabindex="3" name="Submit" class="btn btn-primary btn">Aceptar</button>
 			</div>
 		</div>
 		<?php
